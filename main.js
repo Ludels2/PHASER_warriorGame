@@ -16,7 +16,7 @@ var config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 600 },  // Valor de gravidade balanceado para um "feeling" de plataforma ágil
-            debug: true           // Modo debug ativado para validação de hitboxes em tempo de desenvolvimento
+            debug: false           // Modo debug ativado para validação de hitboxes em tempo de desenvolvimento
         }
     },
 
@@ -74,7 +74,7 @@ function preload() {
     this.load.spritesheet('prota', 'assets/sprites/protaIdle.png', { frameWidth: 128, frameHeight: 80 });
     this.load.spritesheet('protaMov', 'assets/sprites/protaRun.png', { frameWidth: 128, frameHeight: 80 });
     this.load.spritesheet('protaAttack', 'assets/sprites/protaCombo1.png', { frameWidth: 128, frameHeight: 80 });
-    this.load.spritesheet('protaJump', 'assets/sprites/protaJump.png', { frameWidth: 128, frameHeight: 80 });
+    this.load.spritesheet('protaJump', 'assets/sprites/protaJump.png', { frameWidth: 128, frameHeight: 60 });
     this.load.spritesheet('protaDash', 'assets/sprites/protaDash.png', { frameWidth: 128, frameHeight: 80 });
     this.load.spritesheet('coin', 'assets/sprites/coinSheet.png', { frameWidth: 20, frameHeight: 20 });
     
